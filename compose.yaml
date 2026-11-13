@@ -1,0 +1,115 @@
+name: chappie3d
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-chappie}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-chappie_secret}
+      POSTGRES_DB: ${POSTGRES_DB:-chappie_db}
+    ports:
+      - "${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - type: bind
+        source: ${POSTGRES_DATA_PATH:-./service-data/postgres}
+        target: /var/lib/postgresql/data
+        bind:
+          create_host_path: false
+    networks: [backend]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-chappie} -d ${POSTGRES_DB:-chappie_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "${REDIS_PORT:-6380}:6379"
+    volumes:
+      - type: bind
+        source: ${REDIS_DATA_PATH:-./service-data/redis}
+        target: /data
+        bind:
+          create_host_path: false
+    networks: [backend]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  workspace:
+    build:
+      context: .
+      dockerfile: src/services/workspace/Dockerfile
+    environment:
+      WORKSPACE_DATABASE_URL: ${WORKSPACE_DATABASE_URL:-sqlite:////app/data/workspace.db}
+      WORKSPACE_SERVICE_PORT: 8001
+      WORKSPACE_ENABLED: "true"
+    ports:
+      - "${WORKSPACE_PORT:-8005}:8001"
+    volumes:
+      - ./data:/app/data
+    networks: [backend]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:8001/api/health')\""]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  backend:
+    build:
+      context: .
+      dockerfile: src/services/backend/Dockerfile
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-chappie}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-chappie_secret}
+      POSTGRES_DB: ${POSTGRES_DB:-chappie_db}
+      POSTGRES_HOST: db
+      POSTGRES_PORT: 5432
+      DATABASE_URL: ${DATABASE_URL:-postgresql+psycopg://chappie:chappie_secret@db:5432/chappie_db}
+      SECRET_KEY: ${SECRET_KEY:-chappie3d_engineering_secret_key_production_2026}
+      SESSION_EXPIRY_HOURS: ${SESSION_EXPIRY_HOURS:-12}
+      AGENT_SERVICE_URL: ${AGENT_SERVICE_URL:-http://host.docker.internal:8003}
+      BACKEND_PORT: 8002
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "${BACKEND_PORT:-8004}:8002"
+    volumes:
+      - ./data:/app/data
+    networks: [backend]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:8002/api/backend/health')\""]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  ui:
+    build:
+      context: ./ui
+      dockerfile: Dockerfile
+    ports:
+      - "${UI_PORT:-3001}:80"
+    depends_on:
+      - backend
+    networks: [backend]
+    restart: unless-stopped
+
+networks:
+  backend:
+    driver: bridge

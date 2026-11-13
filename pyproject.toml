@@ -1,0 +1,67 @@
+[project]
+name = "chappie3d"
+version = "1.0.0b2"
+description = "Chappie3D Engineering Workstation - 3D modeling, circuit simulation, and coding assistant"
+readme = "README.md"
+authors = [
+    { name = "Michał Cyberdyne Wiśniewski", email = "michalwisniewskiofficial@gmail.com" }
+]
+requires-python = ">=3.12,<3.15"
+dependencies = [
+    "alembic>=1.13.0,<2",
+    "beautifulsoup4>=4.12,<5",
+    "chromadb>=1.5.9,<2",
+    "cryptography>=42.0.0,<45",
+    "ElectricCircuitSim>=0.0.2,<1",
+    "fastapi>=0.115,<1",
+    "fonttools>=4.50.0,<5",
+    "googlesearch-python>=1.2.0,<2",
+    "httpx>=0.28,<1",
+    "langchain-core>=1,<2",
+    "langchain-openai>=1,<2",
+    "langgraph>=1,<2",
+    "psycopg[binary]>=3.2,<4",
+    "psycopg2-binary>=2.9.9,<3",
+    "pydantic>=2.10,<3",
+    "pydantic-settings>=2.7,<3",
+    "pillow>=10.0,<14",
+    "pypdf>=5,<7",
+    "python-multipart>=0.0.20,<1",
+    "sqlalchemy>=2.0.36,<3",
+    "tiktoken>=0.7,<1",
+    "uvicorn[standard]>=0.34,<1",
+    "rich>=15.0.0",
+    "websockets>=16.1.1",
+    "redis>=5.0.0",
+]
+
+[project.scripts]
+chappie-api = "services.agent.main:run"
+chappie-backend = "services.backend.main:run"
+chappie-index = "chappie.indexer:main"
+workspace-api = "services.workspace.main:run"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.22.3",
+    "pytest>=8.3,<10",
+    "pytest-asyncio>=0.25,<2",
+    "ruff>=0.11,<1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

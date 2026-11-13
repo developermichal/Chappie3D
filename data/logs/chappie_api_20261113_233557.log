@@ -1,0 +1,6 @@
+2026-11-13 23:35:58 [WARNING] [chappie.projects] Skipping inaccessible project 412fca5e4d69 in listing: Project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-756\test_invalid_registry_entry_is0\data' overlaps app-data directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-756\test_invalid_registry_entry_is0\data'.
+2026-11-13 23:36:02 [WARNING] [chappie.redis_cache] Redis server not reachable (Timeout connecting to server). Falling back to in-memory context cache.
+2026-11-13 23:36:03 [ERROR] [chappie.profiles] Failed to read profiles from C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-756\test_project_mutations_reject_0\data\profiles.json: Expecting value: line 1 column 1 (char 0)
+2026-11-13 23:36:03 [INFO] [chappie.agent] Session '164c3de29a8b447c89ef4714c5a1e876' initialized in pure RAM mode (RAM usage: 71.2% <= 80.0%).
+2026-11-13 23:36:04 [INFO] [chappie.agent] Auto-wrote file 'src/controllers/user_controller.py' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-756\test_agent_host_project_access0\host_workspaces\ecommerce_service'
+2026-11-13 23:36:04 [INFO] [chappie.agent] Session 'e68122a936574280a1d220e39b1cfef0' initialized in pure RAM mode (RAM usage: 71.3% <= 80.0%).

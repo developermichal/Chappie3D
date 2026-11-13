@@ -1,0 +1,34 @@
+2026-11-13 23:22:29 [WARNING] [chappie.projects] Skipping inaccessible project 4a07d118c15c in listing: Project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-744\test_invalid_registry_entry_is0\data' overlaps app-data directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-744\test_invalid_registry_entry_is0\data'.
+2026-11-13 23:22:34 [WARNING] [chappie.redis_cache] Redis server not reachable (Timeout connecting to server). Falling back to in-memory context cache.
+2026-11-13 23:22:34 [INFO] [chappie.agent] Session '2952c54aa5ea42648a82f9d8fb7cab53' initialized in pure RAM mode (RAM usage: 59.2% <= 80.0%).
+2026-11-13 23:22:34 [INFO] [chappie.agent] Auto-wrote file 'src/controllers/user_controller.py' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-744\test_agent_host_project_access0\host_workspaces\ecommerce_service'
+2026-11-13 23:22:34 [INFO] [chappie.agent] Session '9104f16c693647228bd183c47db5cf00' initialized in pure RAM mode (RAM usage: 59.2% <= 80.0%).
+2026-11-13 23:22:35 [INFO] [chappie.agent] Session 'session_project_01' initialized in pure RAM mode (RAM usage: 59.2% <= 80.0%).
+2026-11-13 23:22:35 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-744\test_agent_runs_with_project_c0\host\rp2040_firmware'
+2026-11-13 23:22:35 [INFO] [chappie.agent] Session 'session_turn_01' initialized in pure RAM mode (RAM usage: 59.2% <= 80.0%).
+2026-11-13 23:22:36 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-744\test_agent_continuity_across_t0\host\rp2040_firmware'
+2026-11-13 23:22:36 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-744\test_agent_continuity_across_t0\host\rp2040_firmware'
+2026-11-13 23:22:36 [INFO] [chappie.agent] Session 'write-error' initialized in pure RAM mode (RAM usage: 59.2% <= 80.0%).
+2026-11-13 23:22:36 [ERROR] [chappie.agent] Failed to auto-write file 'src/spi_driver.c' to project 'RP2040 Sensor Node'
+Traceback (most recent call last):
+  File "C:\development\chappie3d\src\chappie\agent.py", line 2008, in run
+    self.volumes.write_directory_file(
+  File "C:\development\chappie3d\tests\integration\test_agent_project.py", line 202, in fail_write
+    raise OSError("disk full")
+OSError: disk full
+2026-11-13 23:22:36 [INFO] [chappie.agent] Session 'legacy-error' initialized in pure RAM mode (RAM usage: 59.2% <= 80.0%).
+2026-11-13 23:22:36 [ERROR] [chappie.agent] Failed to auto-write file 'src/spi_driver.c' to project 'RP2040 Sensor Node'
+Traceback (most recent call last):
+  File "C:\development\chappie3d\src\chappie\agent.py", line 2019, in run
+    raise ValueError(
+ValueError: Project 'RP2040 Sensor Node' needs a host directory before writing files.
+2026-11-13 23:22:36 [INFO] [chappie.agent] Session 'escape-test' initialized in pure RAM mode (RAM usage: 59.2% <= 80.0%).
+2026-11-13 23:22:36 [INFO] [chappie.agent] Session 'session_ctx_01' initialized in pure RAM mode (RAM usage: 59.2% <= 80.0%).
+2026-11-13 23:22:36 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-744\test_agent_runs_with_auto_load0\host\rp2040_firmware'
+2026-11-13 23:22:36 [INFO] [chappie.agent] Session 'session_sliding_01' initialized in pure RAM mode (RAM usage: 59.2% <= 80.0%).
+2026-11-13 23:22:36 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-744\test_agent_sliding_window_prom0\host\rp2040_firmware'
+2026-11-13 23:22:36 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-744\test_agent_sliding_window_prom0\host\rp2040_firmware'
+2026-11-13 23:22:36 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-744\test_agent_sliding_window_prom0\host\rp2040_firmware'
+2026-11-13 23:22:36 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-744\test_agent_sliding_window_prom0\host\rp2040_firmware'
+2026-11-13 23:22:36 [INFO] [chappie.agent] Session 'session_update_ctx' initialized in pure RAM mode (RAM usage: 59.2% <= 80.0%).
+2026-11-13 23:22:36 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-744\test_update_project_current_co0\host\rp2040_firmware'

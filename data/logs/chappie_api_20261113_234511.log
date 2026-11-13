@@ -1,0 +1,6 @@
+2026-11-13 23:45:15 [WARNING] [chappie.redis_cache] Redis server not reachable (Timeout connecting to server). Falling back to in-memory context cache.
+2026-11-13 23:45:17 [ERROR] [chappie.profiles] Failed to read profiles from C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-762\test_project_mutations_reject_0\data\profiles.json: Expecting value: line 1 column 1 (char 0)
+2026-11-13 23:45:24 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=38624 for session test_int_sess_001 (Project: integration_project)
+2026-11-13 23:45:29 [INFO] [chappie.api] Terminal client disconnected for session test_int_sess_001
+2026-11-13 23:45:29 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=38624 (session: test_int_sess_001)...
+2026-11-13 23:45:29 [INFO] [chappie.terminal_manager] Terminal worker PID=38624 terminated successfully.

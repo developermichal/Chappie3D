@@ -1,0 +1,51 @@
+2026-11-14 00:07:09 [INFO] [chappie.agent] Session 'mem_session_01' initialized in pure RAM mode (RAM usage: 45.0% <= 80.0%).
+2026-11-14 00:07:13 [WARNING] [chappie.redis_cache] Redis server not reachable (Timeout connecting to server). Falling back to in-memory context cache.
+2026-11-14 00:07:13 [INFO] [chappie.agent] Session 'spill_session_01' activated disk spill to 'sessions' volume (RAM usage: 88.5% > 80.0%).
+2026-11-14 00:07:13 [INFO] [chappie.agent] Session 'budget_session_01' initialized in pure RAM mode (RAM usage: 70.2% <= 80.0%).
+2026-11-14 00:07:13 [INFO] [chappie.agent] Session 'restore_test_session' activated disk spill to 'sessions' volume (RAM usage: 85.0% > 80.0%).
+2026-11-14 00:07:13 [INFO] [chappie.agent] Session 'proj_session_123' initialized in pure RAM mode (RAM usage: 70.2% <= 80.0%).
+2026-11-14 00:07:13 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2053 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 00:07:13 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2057 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 00:07:13 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2075 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 00:07:14 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2096 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 00:07:14 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2099 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 00:07:15 [INFO] [chappie.agent] Session 'dynamic_hist_sess_01' initialized in pure RAM mode (RAM usage: 70.2% <= 80.0%).
+2026-11-14 00:07:15 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2657 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 00:07:15 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 1785 tokens exceeds limit 1500 tokens. Trimming context...
+2026-11-14 00:07:15 [INFO] [chappie.agent] Session 'e2e_multi_turn_session' initialized in pure RAM mode (RAM usage: 70.2% <= 80.0%).
+2026-11-14 00:07:15 [INFO] [chappie.agent] Session 'massive_40k_session_test' initialized in pure RAM mode (RAM usage: 70.2% <= 80.0%).
+2026-11-14 00:07:15 [INFO] [chappie.agent] Session 'unbounded' initialized in pure RAM mode (RAM usage: 70.2% <= 80.0%).
+2026-11-14 00:07:17 [INFO] [chappie.agent] Session 'session_project_01' initialized in pure RAM mode (RAM usage: 70.2% <= 80.0%).
+2026-11-14 00:07:21 [WARNING] [chappie.redis_cache] Redis server not reachable (Timeout connecting to server). Falling back to in-memory context cache.
+2026-11-14 00:07:21 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-778\test_agent_runs_with_project_c0\host\rp2040_firmware'
+2026-11-14 00:07:21 [INFO] [chappie.agent] Session 'session_turn_01' initialized in pure RAM mode (RAM usage: 70.2% <= 80.0%).
+2026-11-14 00:07:21 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-778\test_agent_continuity_across_t0\host\rp2040_firmware'
+2026-11-14 00:07:21 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-778\test_agent_continuity_across_t0\host\rp2040_firmware'
+2026-11-14 00:07:21 [INFO] [chappie.agent] Session 'first' initialized in pure RAM mode (RAM usage: 70.2% <= 80.0%).
+2026-11-14 00:07:21 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-778\test_project_agent_does_not_sh0\host\rp2040_firmware'
+2026-11-14 00:07:21 [INFO] [chappie.agent] Session 'second' initialized in pure RAM mode (RAM usage: 70.2% <= 80.0%).
+2026-11-14 00:07:21 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-778\test_project_agent_does_not_sh0\host\rp2040_firmware'
+2026-11-14 00:07:21 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-778\test_project_agent_does_not_sh0\host\rp2040_firmware'
+2026-11-14 00:07:21 [INFO] [chappie.agent] Session 'write-error' initialized in pure RAM mode (RAM usage: 70.2% <= 80.0%).
+2026-11-14 00:07:21 [ERROR] [chappie.agent] Failed to auto-write file 'src/spi_driver.c' to project 'RP2040 Sensor Node'
+Traceback (most recent call last):
+  File "C:\development\chappie3d\src\chappie\agent.py", line 1911, in run
+    self.volumes.write_directory_file(
+  File "C:\development\chappie3d\tests\integration\test_agent_project.py", line 216, in fail_write
+    raise OSError("disk full")
+OSError: disk full
+2026-11-14 00:07:21 [INFO] [chappie.agent] Session 'legacy-error' initialized in pure RAM mode (RAM usage: 70.2% <= 80.0%).
+2026-11-14 00:07:22 [INFO] [chappie.agent] Session 'escape-test' initialized in pure RAM mode (RAM usage: 70.2% <= 80.0%).
+2026-11-14 00:07:22 [INFO] [chappie.agent] Session 'session_ctx_01' initialized in pure RAM mode (RAM usage: 70.2% <= 80.0%).
+2026-11-14 00:07:22 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-778\test_agent_runs_with_auto_load0\host\rp2040_firmware'
+2026-11-14 00:07:22 [INFO] [chappie.agent] Session 'session_sliding_01' initialized in pure RAM mode (RAM usage: 70.2% <= 80.0%).
+2026-11-14 00:07:22 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-778\test_agent_sliding_window_prom0\host\rp2040_firmware'
+2026-11-14 00:07:22 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-778\test_agent_sliding_window_prom0\host\rp2040_firmware'
+2026-11-14 00:07:22 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-778\test_agent_sliding_window_prom0\host\rp2040_firmware'
+2026-11-14 00:07:22 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-778\test_agent_sliding_window_prom0\host\rp2040_firmware'
+2026-11-14 00:07:22 [INFO] [chappie.agent] Session 'session_update_ctx' initialized in pure RAM mode (RAM usage: 70.3% <= 80.0%).
+2026-11-14 00:07:22 [INFO] [chappie.agent] Auto-wrote file 'src/spi_driver.c' directly to project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-778\test_update_project_current_co0\host\rp2040_firmware'
+2026-11-14 00:07:29 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=35004 for session test_int_sess_001 (Project: integration_project)
+2026-11-14 00:07:33 [INFO] [chappie.api] Terminal client disconnected for session test_int_sess_001
+2026-11-14 00:07:33 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=35004 (session: test_int_sess_001)...
+2026-11-14 00:07:33 [INFO] [chappie.terminal_manager] Terminal worker PID=35004 terminated successfully.

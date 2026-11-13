@@ -1,0 +1,2 @@
+2026-11-13 23:48:37 [WARNING] [chappie.redis_cache] Redis server not reachable (Timeout connecting to server). Falling back to in-memory context cache.
+2026-11-13 23:48:39 [ERROR] [chappie.profiles] Failed to read profiles from C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-765\test_project_mutations_reject_0\data\profiles.json: Expecting value: line 1 column 1 (char 0)

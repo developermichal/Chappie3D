@@ -1,0 +1,63 @@
+2026-11-13 23:12:14 [ERROR] [chappie.api] Failed to write volume file
+Traceback (most recent call last):
+  File "C:\development\chappie3d\src\chappie\api.py", line 378, in write_volume_file
+    return get_services().volumes.write_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\development\chappie3d\src\chappie\volume_manager.py", line 475, in write_file
+    self._require_volume_directory(volume_name)
+  File "C:\development\chappie3d\src\chappie\volume_manager.py", line 510, in _require_volume_directory
+    raise FileNotFoundError(f"Volume '{volume_name}' does not exist; migration may be required.")
+FileNotFoundError: Volume 'ecommerce_backend' does not exist; migration may be required.
+2026-11-13 23:12:14 [ERROR] [chappie.api] Failed to write volume file
+Traceback (most recent call last):
+  File "C:\development\chappie3d\src\chappie\api.py", line 378, in write_volume_file
+    return get_services().volumes.write_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\development\chappie3d\src\chappie\volume_manager.py", line 475, in write_file
+    self._require_volume_directory(volume_name)
+  File "C:\development\chappie3d\src\chappie\volume_manager.py", line 510, in _require_volume_directory
+    raise FileNotFoundError(f"Volume '{volume_name}' does not exist; migration may be required.")
+FileNotFoundError: Volume 'ecommerce_backend' does not exist; migration may be required.
+2026-11-13 23:12:14 [ERROR] [chappie.api] Failed to write volume file
+Traceback (most recent call last):
+  File "C:\development\chappie3d\src\chappie\api.py", line 378, in write_volume_file
+    return get_services().volumes.write_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\development\chappie3d\src\chappie\volume_manager.py", line 475, in write_file
+    self._require_volume_directory(volume_name)
+  File "C:\development\chappie3d\src\chappie\volume_manager.py", line 510, in _require_volume_directory
+    raise FileNotFoundError(f"Volume '{volume_name}' does not exist; migration may be required.")
+FileNotFoundError: Volume 'ecommerce_backend' does not exist; migration may be required.
+2026-11-13 23:12:14 [ERROR] [chappie.api] Failed to scan project volume '1f19d89d5db0'
+Traceback (most recent call last):
+  File "C:\development\chappie3d\src\chappie\api.py", line 549, in scan_project_volume
+    files = services.volumes.list_files(proj.volume_name, max_files=100)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\development\chappie3d\src\chappie\volume_manager.py", line 352, in list_files
+    vol_root = self._require_volume_directory(volume_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\development\chappie3d\src\chappie\volume_manager.py", line 510, in _require_volume_directory
+    raise FileNotFoundError(f"Volume '{volume_name}' does not exist; migration may be required.")
+FileNotFoundError: Volume 'ecommerce_backend' does not exist; migration may be required.
+2026-11-13 23:12:14 [ERROR] [chappie.api] Failed to scan project volume '1f19d89d5db0'
+Traceback (most recent call last):
+  File "C:\development\chappie3d\src\chappie\api.py", line 549, in scan_project_volume
+    files = services.volumes.list_files(proj.volume_name, max_files=100)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\development\chappie3d\src\chappie\volume_manager.py", line 352, in list_files
+    vol_root = self._require_volume_directory(volume_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\development\chappie3d\src\chappie\volume_manager.py", line 510, in _require_volume_directory
+    raise FileNotFoundError(f"Volume '{volume_name}' does not exist; migration may be required.")
+FileNotFoundError: Volume 'ecommerce_backend' does not exist; migration may be required.
+2026-11-13 23:12:14 [ERROR] [chappie.api] Failed to scan project volume '1f19d89d5db0'
+Traceback (most recent call last):
+  File "C:\development\chappie3d\src\chappie\api.py", line 549, in scan_project_volume
+    files = services.volumes.list_files(proj.volume_name, max_files=100)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\development\chappie3d\src\chappie\volume_manager.py", line 352, in list_files
+    vol_root = self._require_volume_directory(volume_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\development\chappie3d\src\chappie\volume_manager.py", line 510, in _require_volume_directory
+    raise FileNotFoundError(f"Volume '{volume_name}' does not exist; migration may be required.")
+FileNotFoundError: Volume 'ecommerce_backend' does not exist; migration may be required.

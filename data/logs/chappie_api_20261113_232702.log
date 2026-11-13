@@ -1,0 +1,5 @@
+2026-11-13 23:27:06 [WARNING] [chappie.redis_cache] Redis server not reachable (Timeout connecting to server). Falling back to in-memory context cache.
+2026-11-13 23:27:14 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=20292 for session test_int_sess_001 (Project: integration_project)
+2026-11-13 23:27:18 [INFO] [chappie.api] Terminal client disconnected for session test_int_sess_001
+2026-11-13 23:27:18 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=20292 (session: test_int_sess_001)...
+2026-11-13 23:27:18 [INFO] [chappie.terminal_manager] Terminal worker PID=20292 terminated successfully.
