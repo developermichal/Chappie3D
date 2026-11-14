@@ -1,0 +1,56 @@
+# Problem Context — Project Autonomous Mod 312622 (Klasa 2: Problem & Task Context)
+
+> **Typ Kontekstu:** Klasa 2 (Dynamiczny Slot Roboczy Projektu)  
+> **Status:** Aktywny / Zsynchronizowany (`update current context`)  
+> **Knowledge Profile:** `default`  
+> **Wolumen:** `vol_proj_312622`  
+
+---
+
+## 1. Problem Identifier & Metadata
+
+- **Nazwa Projektu:** `Project Autonomous Mod 312622`
+- **Opis:** Updated autonomous navigation description
+- **Profil Wiedzy:** default
+- **Repozytorium Git:** GitHub (`https://github.com/org/autonomous-nav.git`, branch: `main`)
+- **Ostatnia Synchronizacja:** 2026-11-14 01:05 UTC
+
+---
+
+## 2. Problem Statement & Scope
+
+### 2.1. Istota Problemu / Cel Projektu
+Updated problem summary
+
+### 2.2. Cele Inżynierskie & Zakres
+- Ciągłość stanu projektowego w wolumenie `vol_proj_312622`.
+- Zgodność z wytycznymi `MICHALS_WAYS.md` oraz regułą Zero Regressions.
+
+### 2.3. Ograniczenia i Warunki Brzegowe
+- Ścisła izolacja w wolumenie `vol_proj_312622`.
+
+---
+
+## 3. Findings & Implementation Status
+
+### 3.1. Historia Ostatnich Zadań i Rezultatów
+- Brak wcześniejszych tur dialogowych.
+
+### 3.2. Pliki w Wolumenie (1 elementów)
+```text
+[FILE] .chappie (1.2 KB)
+```
+
+---
+
+## 4. Architectural Decisions
+
+- Zarządzanie deklaratywnym stanem Git i trwałą pamięcią w wolumenie `projects`.
+
+## Detailed Project Explanation & Architecture Analysis
+> **Analyzed & Explained:** 2026-11-14 01:05 UTC  
+> **Status:** Explained  
+> **Knowledge Profile:** `default`  
+
+# Detailed Architecture Analysis
+This project implements Kalman Filter SLAM.

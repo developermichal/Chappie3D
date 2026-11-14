@@ -1,0 +1,3 @@
+2026-11-14 02:05:18 [INFO] [chappie.ui.integration] Initialized UI Service Integration Test Logger target: C:\development\agents\Chappie3D\tests\integration\services\ui\integration.log
+2026-11-14 02:05:19 [INFO] [chappie.ui.integration] Live gateway not reachable at http://localhost:8004. Initializing in-process gateway test harness.
+2026-11-14 02:05:19 [INFO] [chappie.ui.integration] Creating unauthenticated TestClient targeting in-process gateway: http://localhost:8004

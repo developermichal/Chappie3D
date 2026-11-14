@@ -13,12 +13,14 @@ from chappie.terminal_manager import TerminalProcessManager
 
 
 @pytest.fixture
-def test_settings(tmp_path: Path) -> Settings:
+def test_settings(tmp_path_factory: pytest.TempPathFactory) -> Settings:
     """Fixture providing isolated temporary Settings for terminal manager tests."""
+    app_data = tmp_path_factory.mktemp("terminal-app-data")
     return Settings(
-        profiles_file_path=str(tmp_path / "profiles.json"),
-        projects_file_path=str(tmp_path / "projects.json"),
-        storage_dir=str(tmp_path / "volumes"),
+        profiles_file_path=str(app_data / "profiles.json"),
+        projects_file_path=str(app_data / "projects.json"),
+        chappie_data_path=str(app_data),
+        volumes_base_path=str(app_data / "volumes"),
     )
 
 
@@ -158,3 +160,31 @@ async def test_terminal_manager_shutdown_all(tmp_path: Path, test_settings: Sett
     assert len(manager.workers) == 0
     assert not handle1.process.is_alive()
     assert not handle2.process.is_alive()
+
+
+@pytest.mark.asyncio
+async def test_terminal_manager_handshake_fallback_for_unregistrable_project(
+    tmp_path: Path, test_settings: Settings
+) -> None:
+    """Verifies fallback project_id generation when project registration fails."""
+    manager = TerminalProcessManager(test_settings)
+
+    # Use a non-existent root to force projects.open_directory_project failure.
+    invalid_root = tmp_path / "does_not_exist"
+
+    handshake_data = {
+        "session_id": "fallback_test_sess",
+        "project_name": "fallback_proj",
+        "project_root": str(invalid_root),
+        "chappie_context": "",
+        "response_language": "en",
+        "enable_web_search": False,
+    }
+
+    # Should succeed despite invalid root
+    handle = await manager.start_session(handshake_data)
+    assert handle.session_id == "fallback_test_sess"
+    assert handle.process.is_alive()
+
+    # Terminate
+    await manager.terminate_session("fallback_test_sess")

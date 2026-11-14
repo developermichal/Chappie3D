@@ -1,0 +1,112 @@
+2026-11-14 02:11:54 [INFO] [chappie.agent] Session 'mem_session_01' initialized in pure RAM mode (RAM usage: 45.0% <= 80.0%).
+2026-11-14 02:11:54 [INFO] [chappie.agent] Session 'mem_session_01' initialized in pure RAM mode (RAM usage: 45.0% <= 80.0%).
+2026-11-14 02:11:54 [INFO] [chappie.redis_cache] Successfully connected to Redis cache at redis://localhost:6380/0
+2026-11-14 02:11:54 [INFO] [chappie.redis_cache] Successfully connected to Redis cache at redis://localhost:6380/0
+2026-11-14 02:11:54 [INFO] [chappie.agent] Session 'spill_session_01' activated disk spill to 'sessions' volume (RAM usage: 88.5% > 80.0%).
+2026-11-14 02:11:54 [INFO] [chappie.agent] Session 'spill_session_01' activated disk spill to 'sessions' volume (RAM usage: 88.5% > 80.0%).
+2026-11-14 02:11:54 [INFO] [chappie.agent] Session 'budget_session_01' initialized in pure RAM mode (RAM usage: 51.3% <= 80.0%).
+2026-11-14 02:11:54 [INFO] [chappie.agent] Session 'budget_session_01' initialized in pure RAM mode (RAM usage: 51.3% <= 80.0%).
+2026-11-14 02:11:54 [INFO] [chappie.agent] Session 'restore_test_session' activated disk spill to 'sessions' volume (RAM usage: 85.0% > 80.0%).
+2026-11-14 02:11:54 [INFO] [chappie.agent] Session 'restore_test_session' activated disk spill to 'sessions' volume (RAM usage: 85.0% > 80.0%).
+2026-11-14 02:11:54 [INFO] [chappie.agent] Session 'proj_session_123' initialized in pure RAM mode (RAM usage: 51.3% <= 80.0%).
+2026-11-14 02:11:54 [INFO] [chappie.agent] Session 'proj_session_123' initialized in pure RAM mode (RAM usage: 51.3% <= 80.0%).
+2026-11-14 02:11:55 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2053 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 02:11:55 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2053 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 02:11:55 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2057 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 02:11:55 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2057 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 02:11:55 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2075 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 02:11:55 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2075 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 02:11:55 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2096 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 02:11:55 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2096 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 02:11:55 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2099 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 02:11:55 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2099 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 02:11:56 [INFO] [chappie.agent] Session 'dynamic_hist_sess_01' initialized in pure RAM mode (RAM usage: 51.3% <= 80.0%).
+2026-11-14 02:11:56 [INFO] [chappie.agent] Session 'dynamic_hist_sess_01' initialized in pure RAM mode (RAM usage: 51.3% <= 80.0%).
+2026-11-14 02:11:56 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2657 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 02:11:56 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 2657 tokens exceeds limit 2048 tokens. Trimming context...
+2026-11-14 02:11:56 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 1785 tokens exceeds limit 1500 tokens. Trimming context...
+2026-11-14 02:11:56 [INFO] [chappie.agent] Hard Token Safety Gate triggered: estimated 1785 tokens exceeds limit 1500 tokens. Trimming context...
+2026-11-14 02:11:56 [INFO] [chappie.agent] Session 'e2e_multi_turn_session' initialized in pure RAM mode (RAM usage: 51.3% <= 80.0%).
+2026-11-14 02:11:56 [INFO] [chappie.agent] Session 'e2e_multi_turn_session' initialized in pure RAM mode (RAM usage: 51.3% <= 80.0%).
+2026-11-14 02:11:56 [INFO] [chappie.agent] Session 'massive_40k_session_test' initialized in pure RAM mode (RAM usage: 51.3% <= 80.0%).
+2026-11-14 02:11:56 [INFO] [chappie.agent] Session 'massive_40k_session_test' initialized in pure RAM mode (RAM usage: 51.3% <= 80.0%).
+2026-11-14 02:11:56 [INFO] [chappie.agent] Session 'unbounded' initialized in pure RAM mode (RAM usage: 51.3% <= 80.0%).
+2026-11-14 02:11:56 [INFO] [chappie.agent] Session 'unbounded' initialized in pure RAM mode (RAM usage: 51.3% <= 80.0%).
+2026-11-14 02:11:57 [INFO] [chappie.redis_cache] Successfully connected to Redis cache at redis://localhost:6380/0
+2026-11-14 02:11:57 [INFO] [chappie.redis_cache] Successfully connected to Redis cache at redis://localhost:6380/0
+2026-11-14 02:11:57 [INFO] [chappie.agent] Session '3450df866fe545d7a02426cc0695da03' initialized in pure RAM mode (RAM usage: 51.4% <= 80.0%).
+2026-11-14 02:11:57 [INFO] [chappie.agent] Session '3450df866fe545d7a02426cc0695da03' initialized in pure RAM mode (RAM usage: 51.4% <= 80.0%).
+2026-11-14 02:11:57 [INFO] [chappie.redis_cache] Successfully connected to Redis cache at redis://localhost:6380/0
+2026-11-14 02:11:57 [INFO] [chappie.redis_cache] Successfully connected to Redis cache at redis://localhost:6380/0
+2026-11-14 02:11:57 [INFO] [chappie.embedder] Loading embedding model /models/embedder on device: cuda
+2026-11-14 02:11:57 [INFO] [chappie.embedder] Loading embedding model /models/embedder on device: cuda
+2026-11-14 02:11:57 [INFO] [chappie.embedder] Embedder model loaded on cuda:0 (GPU diagnostic failed)
+2026-11-14 02:11:57 [INFO] [chappie.embedder] Embedder model loaded on cuda:0 (GPU diagnostic failed)
+2026-11-14 02:11:58 [WARNING] [chappie.projects] Skipping inaccessible project 52de79cd45b2 in listing: Project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-790\test_invalid_registry_entry_is0\data' overlaps app-data directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-790\test_invalid_registry_entry_is0\data'.
+2026-11-14 02:11:58 [WARNING] [chappie.projects] Skipping inaccessible project 52de79cd45b2 in listing: Project directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-790\test_invalid_registry_entry_is0\data' overlaps app-data directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-790\test_invalid_registry_entry_is0\data'.
+2026-11-14 02:11:58 [ERROR] [chappie.knowledge] Embedding service timed out after 10.0s while processing 1 chunk(s). Check if embedder container (http://embedder:8090) is responsive and has enough resources.
+2026-11-14 02:11:58 [ERROR] [chappie.knowledge] Embedding service timed out after 10.0s while processing 1 chunk(s). Check if embedder container (http://embedder:8090) is responsive and has enough resources.
+2026-11-14 02:11:58 [ERROR] [chappie.knowledge] Failed to connect to embedding service at http://embedder:8090. Ensure the embedder container/service is running and reachable.
+2026-11-14 02:11:58 [ERROR] [chappie.knowledge] Failed to connect to embedding service at http://embedder:8090. Ensure the embedder container/service is running and reachable.
+2026-11-14 02:11:58 [WARNING] [chappie.workspace_client] Failed executing SQL via workspace service: workspace unavailable
+2026-11-14 02:11:58 [WARNING] [chappie.workspace_client] Failed executing SQL via workspace service: workspace unavailable
+2026-11-14 02:11:58 [WARNING] [chappie.memory] Failed BPE token estimation via tiktoken, falling back to byte upper bound: Corrupted BPE vocabulary
+2026-11-14 02:11:58 [WARNING] [chappie.memory] Failed BPE token estimation via tiktoken, falling back to byte upper bound: Corrupted BPE vocabulary
+2026-11-14 02:11:58 [ERROR] [chappie.profiles] Failed to read profiles from C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-790\test_profile_storage_handles_c0\corrupted.json: Expecting value: line 1 column 1 (char 0)
+2026-11-14 02:11:58 [ERROR] [chappie.profiles] Failed to read profiles from C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-790\test_profile_storage_handles_c0\corrupted.json: Expecting value: line 1 column 1 (char 0)
+2026-11-14 02:11:58 [ERROR] [chappie.profiles] Failed to read profiles from C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-790\test_profile_storage_handles_c0\corrupted.json: Expecting value: line 1 column 1 (char 0)
+2026-11-14 02:11:58 [ERROR] [chappie.profiles] Failed to read profiles from C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-790\test_profile_storage_handles_c0\corrupted.json: Expecting value: line 1 column 1 (char 0)
+2026-11-14 02:11:58 [WARNING] [chappie.profiles] Could not create storage directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-790\test_profile_storage_readonly_0\readonly_dir\nested': [Errno 30] Read-only file system
+2026-11-14 02:11:58 [WARNING] [chappie.profiles] Could not create storage directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-790\test_profile_storage_readonly_0\readonly_dir\nested': [Errno 30] Read-only file system
+2026-11-14 02:12:00 [INFO] [chappie.agent] Session '0d6dd76bc5514461a95cb708ca0e068d' initialized in pure RAM mode (RAM usage: 51.4% <= 80.0%).
+2026-11-14 02:12:00 [INFO] [chappie.agent] Session '0d6dd76bc5514461a95cb708ca0e068d' initialized in pure RAM mode (RAM usage: 51.4% <= 80.0%).
+2026-11-14 02:12:00 [INFO] [chappie.agent] Session 'fb393cbaffbf4a739690bcc2478c9e41' initialized in pure RAM mode (RAM usage: 51.4% <= 80.0%).
+2026-11-14 02:12:00 [INFO] [chappie.agent] Session 'fb393cbaffbf4a739690bcc2478c9e41' initialized in pure RAM mode (RAM usage: 51.4% <= 80.0%).
+2026-11-14 02:12:01 [INFO] [chappie.test_logger] Test info message
+2026-11-14 02:12:01 [INFO] [chappie.test_logger] Test info message
+2026-11-14 02:12:01 [WARNING] [chappie.test_logger] Test warning message
+2026-11-14 02:12:01 [WARNING] [chappie.test_logger] Test warning message
+2026-11-14 02:12:01 [ERROR] [chappie.test_logger] Test error message
+2026-11-14 02:12:01 [ERROR] [chappie.test_logger] Test error message
+2026-11-14 02:12:01 [INFO] [chappie.redis_cache] Successfully connected to Redis cache at redis://localhost:6380/0
+2026-11-14 02:12:01 [INFO] [chappie.redis_cache] Successfully connected to Redis cache at redis://localhost:6380/0
+2026-11-14 02:12:04 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=20836 for session test_sess_001 (Project: sample_project)
+2026-11-14 02:12:04 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=20836 for session test_sess_001 (Project: sample_project)
+2026-11-14 02:12:04 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=20836 (session: test_sess_001)...
+2026-11-14 02:12:04 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=20836 (session: test_sess_001)...
+2026-11-14 02:12:05 [INFO] [chappie.terminal_manager] Terminal worker PID=20836 terminated successfully.
+2026-11-14 02:12:05 [INFO] [chappie.terminal_manager] Terminal worker PID=20836 terminated successfully.
+2026-11-14 02:12:07 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=3888 for session test_sess_002 (Project: query_project)
+2026-11-14 02:12:07 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=3888 for session test_sess_002 (Project: query_project)
+2026-11-14 02:12:12 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=3888 (session: test_sess_002)...
+2026-11-14 02:12:12 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=3888 (session: test_sess_002)...
+2026-11-14 02:12:12 [INFO] [chappie.terminal_manager] Terminal worker PID=3888 terminated successfully.
+2026-11-14 02:12:12 [INFO] [chappie.terminal_manager] Terminal worker PID=3888 terminated successfully.
+2026-11-14 02:12:15 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=15968 for session ws_test_sess_001 (Project: ws_proj)
+2026-11-14 02:12:15 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=15968 for session ws_test_sess_001 (Project: ws_proj)
+2026-11-14 02:12:15 [INFO] [chappie.api] Terminal client disconnected for session ws_test_sess_001
+2026-11-14 02:12:15 [INFO] [chappie.api] Terminal client disconnected for session ws_test_sess_001
+2026-11-14 02:12:15 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=15968 (session: ws_test_sess_001)...
+2026-11-14 02:12:15 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=15968 (session: ws_test_sess_001)...
+2026-11-14 02:12:15 [INFO] [chappie.terminal_manager] Terminal worker PID=15968 terminated successfully.
+2026-11-14 02:12:15 [INFO] [chappie.terminal_manager] Terminal worker PID=15968 terminated successfully.
+2026-11-14 02:12:17 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=25760 for session sess_multi_1 (Project: p1)
+2026-11-14 02:12:17 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=25760 for session sess_multi_1 (Project: p1)
+2026-11-14 02:12:20 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=40420 for session sess_multi_2 (Project: p2)
+2026-11-14 02:12:20 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=40420 for session sess_multi_2 (Project: p2)
+2026-11-14 02:12:20 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=25760 (session: sess_multi_1)...
+2026-11-14 02:12:20 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=25760 (session: sess_multi_1)...
+2026-11-14 02:12:20 [INFO] [chappie.terminal_manager] Terminal worker PID=25760 terminated successfully.
+2026-11-14 02:12:20 [INFO] [chappie.terminal_manager] Terminal worker PID=25760 terminated successfully.
+2026-11-14 02:12:20 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=40420 (session: sess_multi_2)...
+2026-11-14 02:12:20 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=40420 (session: sess_multi_2)...
+2026-11-14 02:12:20 [INFO] [chappie.terminal_manager] Terminal worker PID=40420 terminated successfully.
+2026-11-14 02:12:20 [INFO] [chappie.terminal_manager] Terminal worker PID=40420 terminated successfully.
+2026-11-14 02:12:23 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=28680 for session fallback_test_sess (Project: fallback_proj)
+2026-11-14 02:12:23 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=28680 for session fallback_test_sess (Project: fallback_proj)
+2026-11-14 02:12:23 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=28680 (session: fallback_test_sess)...
+2026-11-14 02:12:23 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=28680 (session: fallback_test_sess)...
+2026-11-14 02:12:23 [INFO] [chappie.terminal_manager] Terminal worker PID=28680 terminated successfully.
+2026-11-14 02:12:23 [INFO] [chappie.terminal_manager] Terminal worker PID=28680 terminated successfully.
+2026-11-14 02:12:23 [WARNING] [chappie.web_search] Web search engine connection failed: Network is unreachable
+2026-11-14 02:12:23 [WARNING] [chappie.web_search] Web search engine connection failed: Network is unreachable

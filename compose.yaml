@@ -42,6 +42,103 @@ services:
       timeout: 3s
       retries: 5
 
+  model:
+    profiles: [inference]
+    build:
+      context: .
+      dockerfile: docker/model.Dockerfile
+    command:
+      - --model
+      - /models/chappie.gguf
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8080"
+      - --ctx-size
+      - ${MODEL_CTX_SIZE:-32768}
+      - --n-gpu-layers
+      - all
+      - --split-mode
+      - layer
+      - --parallel
+      - "1"
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - type: bind
+        source: ${MODEL_GGUF_PATH:-C:/development/chappie/model/Qwen3-Coder-30B-A3B-Instruct-Heretic.Q8_0.gguf}
+        target: /models/chappie.gguf
+        read_only: true
+        bind:
+          create_host_path: false
+    read_only: true
+    tmpfs:
+      - /tmp:size=1g
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    networks: [backend]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "http://127.0.0.1:8080/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 120s
+
+  chroma:
+    profiles: [inference]
+    image: chromadb/chroma:1.5.9
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - type: bind
+        # Do not run another Chroma server against this SQLite directory at the same time.
+        source: ${CHROMA_DATA_PATH:-W:/chroma_data}
+        target: /data
+        bind:
+          create_host_path: false
+    networks: [backend]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "bash", "-c", "exec 3<>/dev/tcp/127.0.0.1/8000 && printf 'GET /api/v2/heartbeat HTTP/1.1\\r\\nHost: localhost\\r\\nConnection: close\\r\\n\\r\\n' >&3 && read -r status <&3 && [[ \"$$status\" == *' 200 '* ]] "]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  embedder:
+    profiles: [inference]
+    build:
+      context: .
+      dockerfile: docker/embedder.Dockerfile
+    environment:
+      EMBEDDING_DEVICE: cuda
+    ports:
+      - "127.0.0.1:8090:8090"
+    read_only: true
+    tmpfs:
+      - /tmp:size=2g
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    networks: [backend]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import json, urllib.request; assert json.load(urllib.request.urlopen('http://127.0.0.1:8090/health', timeout=4))['status'] == 'ok'"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 120s
+
   workspace:
     build:
       context: .

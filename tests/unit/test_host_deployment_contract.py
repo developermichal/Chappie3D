@@ -2,10 +2,12 @@
 
 import re
 from pathlib import Path
+from unittest.mock import patch
 
 import yaml
 
 from chappie.config import Settings
+from services.agent.main import run
 from services.backend.config import BackendSettings
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -34,6 +36,39 @@ def test_compose_uses_host_agent_and_bind_mounted_data() -> None:
     assert services["backend"]["environment"]["REDIS_URL"] == "redis://redis:6379/0"
 
 
+def test_inference_services_are_opt_in_and_keep_existing_data() -> None:
+    compose = yaml.safe_load((ROOT / "compose.yaml").read_text(encoding="utf-8"))
+    services = compose["services"]
+    for name, port in (("model", 8080), ("embedder", 8090), ("chroma", 8000)):
+        service = services[name]
+        assert service["profiles"] == ["inference"]
+        assert service["networks"] == ["backend"]
+        assert service["ports"] == [f"127.0.0.1:{port}:{port}"]
+        assert service["healthcheck"]["test"]
+        assert name not in services["backend"].get("depends_on", {})
+
+    model_mount, = services["model"]["volumes"]
+    assert model_mount["read_only"] is True
+    assert model_mount["bind"]["create_host_path"] is False
+    assert model_mount["target"] == "/models/chappie.gguf"
+    assert services["model"]["build"]["dockerfile"] == "docker/model.Dockerfile"
+
+    chroma_mount, = services["chroma"]["volumes"]
+    assert chroma_mount["type"] == "bind"
+    assert chroma_mount["source"] == "${CHROMA_DATA_PATH:-W:/chroma_data}"
+    assert chroma_mount["target"] == "/data"
+    assert chroma_mount["bind"]["create_host_path"] is False
+    assert services["chroma"]["image"] == "chromadb/chroma:1.5.9"
+
+    assert services["embedder"]["build"] == {
+        "context": ".", "dockerfile": "docker/embedder.Dockerfile"
+    }
+    dockerfile = (ROOT / "docker" / "embedder.Dockerfile").read_text(encoding="utf-8")
+    assert "COPY src/chappie /app/chappie" in dockerfile
+    assert (ROOT / "src" / "chappie" / "embedder_api.py").is_file()
+    assert (ROOT / "src" / "chappie" / "models.py").is_file()
+
+
 def test_terminal_websocket_and_host_service_defaults() -> None:
     nginx = (ROOT / "ui" / "nginx.conf").read_text(encoding="utf-8")
     terminal = re.search(r"location /ws/terminal\s*\{([^}]+)}", nginx)
@@ -49,6 +84,14 @@ def test_terminal_websocket_and_host_service_defaults() -> None:
     assert defaults["redis_url"].default == "redis://localhost:6380/0"
     assert defaults["workspace_service_url"].default == "http://localhost:8005"
     assert BackendSettings.model_fields["agent_service_url"].default == "http://localhost:8003"
+
+
+def test_host_agent_entrypoint_uses_terminal_port() -> None:
+    with patch("services.agent.main.uvicorn.run") as uvicorn_run:
+        run()
+    uvicorn_run.assert_called_once_with(
+        "services.agent.main:app", host="0.0.0.0", port=8003, reload=False
+    )
 
 
 def test_migration_and_backend_docs_match_host_deployment() -> None:

@@ -1,10 +1,10 @@
 from __future__ import annotations
 
 import asyncio
-from collections.abc import AsyncIterator
-from contextlib import asynccontextmanager
 import logging
 import os
+from collections.abc import AsyncIterator
+from contextlib import asynccontextmanager
 from typing import Any
 
 import torch
@@ -62,7 +62,7 @@ class EmbedderRuntime:
                     allocated,
                     reserved,
                 )
-            except Exception as exc:
+            except Exception as exc:  # noqa: BLE001 - diagnostic failures must not prevent startup
                 logger.info("Embedder model loaded on %s (%s)", self.model.device, exc)
 
     async def encode(self, texts: list[str], kind: str) -> list[list[float]]:

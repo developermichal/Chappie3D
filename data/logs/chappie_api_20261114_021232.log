@@ -1,0 +1,5 @@
+2026-11-14 02:12:33 [INFO] [chappie.redis_cache] Successfully connected to Redis cache at redis://localhost:6380/0
+2026-11-14 02:12:35 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=39872 for session test_int_sess_001 (Project: integration_project)
+2026-11-14 02:12:39 [INFO] [chappie.api] Terminal client disconnected for session test_int_sess_001
+2026-11-14 02:12:39 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=39872 (session: test_int_sess_001)...
+2026-11-14 02:12:39 [INFO] [chappie.terminal_manager] Terminal worker PID=39872 terminated successfully.

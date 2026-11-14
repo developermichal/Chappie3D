@@ -1254,4 +1254,4 @@ app = create_app()
 
 
 def run() -> None:
-    uvicorn.run("chappie.api:app", host="0.0.0.0", port=8001)
+    uvicorn.run("chappie.api:app", host="0.0.0.0", port=8003)

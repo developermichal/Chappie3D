@@ -13,7 +13,7 @@ def run() -> None:
     uvicorn.run(
         "services.agent.main:app",
         host="0.0.0.0",
-        port=8001,
+        port=8003,
         reload=False,
     )
 

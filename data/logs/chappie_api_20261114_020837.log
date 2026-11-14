@@ -1,0 +1,14 @@
+2026-11-14 02:09:24 [INFO] [chappie.redis_cache] Successfully connected to Redis cache at redis://localhost:6380/0
+2026-11-14 02:09:25 [WARNING] [chappie.workspace_client] Workspace service returned status 500: Internal Server Error
+2026-11-14 02:09:33 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=25636 for session rv1 (Project: rvproj)
+2026-11-14 02:09:37 [INFO] [chappie.api] Terminal client disconnected for session rv1
+2026-11-14 02:09:37 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=25636 (session: rv1)...
+2026-11-14 02:09:38 [INFO] [chappie.terminal_manager] Terminal worker PID=25636 terminated successfully.
+2026-11-14 02:09:42 [ERROR] [chappie.api] Terminal WebSocket error for session rv2: Terminal worker failed to initialize: Project directory 'C:\development\agents\Chappie3D\data' overlaps app-data directory 'C:\development\agents\Chappie3D\data'.
+Traceback (most recent call last):
+  File "C:\development\agents\Chappie3D\src\chappie\api.py", line 1200, in terminal_websocket_endpoint
+    worker_handle = await services.terminal_manager.start_session(handshake_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\development\agents\Chappie3D\src\chappie\terminal_manager.py", line 232, in start_session
+    raise RuntimeError(f"Terminal worker failed to initialize: {err}")
+RuntimeError: Terminal worker failed to initialize: Project directory 'C:\development\agents\Chappie3D\data' overlaps app-data directory 'C:\development\agents\Chappie3D\data'.

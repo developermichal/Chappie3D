@@ -1,0 +1,94 @@
+2026-11-14 02:04:26 [WARNING] [chappie.profiles] Could not create storage directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-788\test_profile_storage_readonly_0\readonly_dir\nested': [Errno 30] Read-only file system
+2026-11-14 02:04:26 [WARNING] [chappie.profiles] Could not create storage directory 'C:\Users\vvisi\AppData\Local\Temp\pytest-of-vvisi\pytest-788\test_profile_storage_readonly_0\readonly_dir\nested': [Errno 30] Read-only file system
+2026-11-14 02:04:27 [INFO] [chappie.agent] Session 'de8210b1f57f458cac8429ee7c9c6317' initialized in pure RAM mode (RAM usage: 48.5% <= 80.0%).
+2026-11-14 02:04:27 [INFO] [chappie.agent] Session 'de8210b1f57f458cac8429ee7c9c6317' initialized in pure RAM mode (RAM usage: 48.5% <= 80.0%).
+2026-11-14 02:04:27 [INFO] [chappie.agent] Session 'de8210b1f57f458cac8429ee7c9c6317' initialized in pure RAM mode (RAM usage: 48.5% <= 80.0%).
+2026-11-14 02:04:27 [INFO] [chappie.agent] Session 'de8210b1f57f458cac8429ee7c9c6317' initialized in pure RAM mode (RAM usage: 48.5% <= 80.0%).
+2026-11-14 02:04:28 [INFO] [chappie.agent] Session '6fd459ababb74bfca103f491560ada7e' initialized in pure RAM mode (RAM usage: 48.5% <= 80.0%).
+2026-11-14 02:04:28 [INFO] [chappie.agent] Session '6fd459ababb74bfca103f491560ada7e' initialized in pure RAM mode (RAM usage: 48.5% <= 80.0%).
+2026-11-14 02:04:28 [INFO] [chappie.agent] Session '6fd459ababb74bfca103f491560ada7e' initialized in pure RAM mode (RAM usage: 48.5% <= 80.0%).
+2026-11-14 02:04:28 [INFO] [chappie.agent] Session '6fd459ababb74bfca103f491560ada7e' initialized in pure RAM mode (RAM usage: 48.5% <= 80.0%).
+2026-11-14 02:04:29 [INFO] [chappie.test_logger] Test info message
+2026-11-14 02:04:29 [INFO] [chappie.test_logger] Test info message
+2026-11-14 02:04:29 [INFO] [chappie.test_logger] Test info message
+2026-11-14 02:04:29 [INFO] [chappie.test_logger] Test info message
+2026-11-14 02:04:29 [WARNING] [chappie.test_logger] Test warning message
+2026-11-14 02:04:29 [WARNING] [chappie.test_logger] Test warning message
+2026-11-14 02:04:29 [WARNING] [chappie.test_logger] Test warning message
+2026-11-14 02:04:29 [WARNING] [chappie.test_logger] Test warning message
+2026-11-14 02:04:29 [ERROR] [chappie.test_logger] Test error message
+2026-11-14 02:04:29 [ERROR] [chappie.test_logger] Test error message
+2026-11-14 02:04:29 [ERROR] [chappie.test_logger] Test error message
+2026-11-14 02:04:29 [ERROR] [chappie.test_logger] Test error message
+2026-11-14 02:04:29 [INFO] [chappie.redis_cache] Successfully connected to Redis cache at redis://localhost:6380/0
+2026-11-14 02:04:29 [INFO] [chappie.redis_cache] Successfully connected to Redis cache at redis://localhost:6380/0
+2026-11-14 02:04:29 [INFO] [chappie.redis_cache] Successfully connected to Redis cache at redis://localhost:6380/0
+2026-11-14 02:04:29 [INFO] [chappie.redis_cache] Successfully connected to Redis cache at redis://localhost:6380/0
+2026-11-14 02:04:32 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=37792 for session test_sess_001 (Project: sample_project)
+2026-11-14 02:04:32 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=37792 for session test_sess_001 (Project: sample_project)
+2026-11-14 02:04:32 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=37792 for session test_sess_001 (Project: sample_project)
+2026-11-14 02:04:32 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=37792 for session test_sess_001 (Project: sample_project)
+2026-11-14 02:04:32 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=37792 (session: test_sess_001)...
+2026-11-14 02:04:32 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=37792 (session: test_sess_001)...
+2026-11-14 02:04:32 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=37792 (session: test_sess_001)...
+2026-11-14 02:04:32 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=37792 (session: test_sess_001)...
+2026-11-14 02:04:32 [INFO] [chappie.terminal_manager] Terminal worker PID=37792 terminated successfully.
+2026-11-14 02:04:32 [INFO] [chappie.terminal_manager] Terminal worker PID=37792 terminated successfully.
+2026-11-14 02:04:32 [INFO] [chappie.terminal_manager] Terminal worker PID=37792 terminated successfully.
+2026-11-14 02:04:32 [INFO] [chappie.terminal_manager] Terminal worker PID=37792 terminated successfully.
+2026-11-14 02:04:34 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=40040 for session test_sess_002 (Project: query_project)
+2026-11-14 02:04:34 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=40040 for session test_sess_002 (Project: query_project)
+2026-11-14 02:04:34 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=40040 for session test_sess_002 (Project: query_project)
+2026-11-14 02:04:34 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=40040 for session test_sess_002 (Project: query_project)
+2026-11-14 02:04:39 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=40040 (session: test_sess_002)...
+2026-11-14 02:04:39 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=40040 (session: test_sess_002)...
+2026-11-14 02:04:39 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=40040 (session: test_sess_002)...
+2026-11-14 02:04:39 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=40040 (session: test_sess_002)...
+2026-11-14 02:04:39 [INFO] [chappie.terminal_manager] Terminal worker PID=40040 terminated successfully.
+2026-11-14 02:04:39 [INFO] [chappie.terminal_manager] Terminal worker PID=40040 terminated successfully.
+2026-11-14 02:04:39 [INFO] [chappie.terminal_manager] Terminal worker PID=40040 terminated successfully.
+2026-11-14 02:04:39 [INFO] [chappie.terminal_manager] Terminal worker PID=40040 terminated successfully.
+2026-11-14 02:04:42 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=12104 for session ws_test_sess_001 (Project: ws_proj)
+2026-11-14 02:04:42 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=12104 for session ws_test_sess_001 (Project: ws_proj)
+2026-11-14 02:04:42 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=12104 for session ws_test_sess_001 (Project: ws_proj)
+2026-11-14 02:04:42 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=12104 for session ws_test_sess_001 (Project: ws_proj)
+2026-11-14 02:04:42 [INFO] [chappie.api] Terminal client disconnected for session ws_test_sess_001
+2026-11-14 02:04:42 [INFO] [chappie.api] Terminal client disconnected for session ws_test_sess_001
+2026-11-14 02:04:42 [INFO] [chappie.api] Terminal client disconnected for session ws_test_sess_001
+2026-11-14 02:04:42 [INFO] [chappie.api] Terminal client disconnected for session ws_test_sess_001
+2026-11-14 02:04:42 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=12104 (session: ws_test_sess_001)...
+2026-11-14 02:04:42 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=12104 (session: ws_test_sess_001)...
+2026-11-14 02:04:42 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=12104 (session: ws_test_sess_001)...
+2026-11-14 02:04:42 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=12104 (session: ws_test_sess_001)...
+2026-11-14 02:04:42 [INFO] [chappie.terminal_manager] Terminal worker PID=12104 terminated successfully.
+2026-11-14 02:04:42 [INFO] [chappie.terminal_manager] Terminal worker PID=12104 terminated successfully.
+2026-11-14 02:04:42 [INFO] [chappie.terminal_manager] Terminal worker PID=12104 terminated successfully.
+2026-11-14 02:04:42 [INFO] [chappie.terminal_manager] Terminal worker PID=12104 terminated successfully.
+2026-11-14 02:04:44 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=18760 for session sess_multi_1 (Project: p1)
+2026-11-14 02:04:44 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=18760 for session sess_multi_1 (Project: p1)
+2026-11-14 02:04:44 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=18760 for session sess_multi_1 (Project: p1)
+2026-11-14 02:04:44 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=18760 for session sess_multi_1 (Project: p1)
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=35928 for session sess_multi_2 (Project: p2)
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=35928 for session sess_multi_2 (Project: p2)
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=35928 for session sess_multi_2 (Project: p2)
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=35928 for session sess_multi_2 (Project: p2)
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=18760 (session: sess_multi_1)...
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=18760 (session: sess_multi_1)...
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=18760 (session: sess_multi_1)...
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=18760 (session: sess_multi_1)...
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Terminal worker PID=18760 terminated successfully.
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Terminal worker PID=18760 terminated successfully.
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Terminal worker PID=18760 terminated successfully.
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Terminal worker PID=18760 terminated successfully.
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=35928 (session: sess_multi_2)...
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=35928 (session: sess_multi_2)...
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=35928 (session: sess_multi_2)...
+2026-11-14 02:04:47 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=35928 (session: sess_multi_2)...
+2026-11-14 02:04:48 [INFO] [chappie.terminal_manager] Terminal worker PID=35928 terminated successfully.
+2026-11-14 02:04:48 [INFO] [chappie.terminal_manager] Terminal worker PID=35928 terminated successfully.
+2026-11-14 02:04:48 [INFO] [chappie.terminal_manager] Terminal worker PID=35928 terminated successfully.
+2026-11-14 02:04:48 [INFO] [chappie.terminal_manager] Terminal worker PID=35928 terminated successfully.
+2026-11-14 02:04:48 [WARNING] [chappie.web_search] Web search engine connection failed: Network is unreachable
+2026-11-14 02:04:48 [WARNING] [chappie.web_search] Web search engine connection failed: Network is unreachable
+2026-11-14 02:04:48 [WARNING] [chappie.web_search] Web search engine connection failed: Network is unreachable
+2026-11-14 02:04:48 [WARNING] [chappie.web_search] Web search engine connection failed: Network is unreachable

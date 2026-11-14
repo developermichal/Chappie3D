@@ -1,0 +1,42 @@
+# Chappie Project Context — UploadedApp_dd4ccd
+
+> **Context Mode:** Local Project Directory (Strict In-Place Sandbox)  
+> **Root Directory:** `C:\development\agents\Chappie3D\projects\.import-9_xr0y48`  
+> **Initialized At:** 2026-11-14 01:05 UTC  
+> **Status:** Active & Indexed  
+> **Knowledge Profile:** `default`  
+
+---
+
+## 1. Project Overview & Purpose
+Source code repository and component implementation for UploadedApp_dd4ccd.
+
+### How to Run, Build & Use:
+
+- Consult project entry points or standard language toolchains for execution.
+
+## 2. Tech Stack & Dependencies
+- **Languages:** JSON (1 files), TypeScript (1 files)
+- **Frameworks & Tools:** Standard project architecture
+- **Project Manifests:** package.json
+- **Key Dependencies:** Standard library / No explicit external package manifest
+
+## 3. Directory Structure & Key Files (2 project files indexed)
+- `package.json` (0.0 KB) [JSON]: Node.js dependencies and script definitions
+- `src/index.ts` (0.0 KB) [TypeScript]: TypeScript/JavaScript module logic
+
+## 4. Architecture & Key Components
+- `src/index.ts` (Defines: const)
+
+## 5. Development Conventions & Guidelines
+- **Sandboxing:** Read and write operations are strictly scoped to `C:\development\agents\Chappie3D\projects\.import-9_xr0y48`. In-place operation only — do NOT copy, upload, or duplicate source files to auxiliary folders or volumes. Analyze and modify files directly in-place.
+- **Third-Party Exclusions:** Third-party package code (e.g. node_modules, .venv) is excluded from agent context modifications.
+- **Consistency:** Maintain existing style, import patterns, error handling, and file naming conventions.
+- **Zero Regressions:** Preserve existing functionality and interfaces when implementing new changes.
+
+---
+
+## 6. History of Changes & Context Turns
+- **[2026-11-14 01:05 UTC] Initial Project Indexing:**
+  - Scanned project structure and learned architecture from 2 files.
+  - Synthesized initial baseline knowledge into `.chappie`.

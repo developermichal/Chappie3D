@@ -104,7 +104,7 @@ async def _worker_async_main(
         profiles=profiles,
     )
 
-    # Register local directory project in worker storage
+    # Attempt to open project; fall back to session-bound id if unregistrable.
     try:
         project_context = projects.open_directory_project(
             root_path=project_root,
@@ -112,11 +112,8 @@ async def _worker_async_main(
             volume_manager=volumes,
         )
         proj_id = project_context.id
-    except Exception as exc:
-        logger.warning(
-            "Could not open directory project via storage: %s. Using session project ID.",
-            exc,
-        )
+    except Exception:
+        # Fallback for remote clients without project registration.
         proj_id = f"term_proj_{session_id[:8]}"
 
     # Seed in-memory session with uploaded .chappie context if available

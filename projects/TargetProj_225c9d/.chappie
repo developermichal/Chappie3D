@@ -1,0 +1,41 @@
+# Problem Context — TargetProj_225c9d (Klasa 2: Problem & Task Context)
+
+> **Typ Kontekstu:** Klasa 2 (Dynamiczny Slot Roboczy Projektu)  
+> **Status:** Aktywny / Roboczy  
+> **Identyfikator projektu:** `tgt_vol_5b9d04`  
+
+---
+
+## 1. Problem Identifier & Metadata
+
+- **Nazwa Projektu:** `TargetProj_225c9d`
+- **Opis:** Brak opisu
+- **Profil Wiedzy:** Brak
+- **Repozytorium Git:** GitHub (`Nie skonfigurowano`, branch: `main`)
+- **Data Inicjalizacji:** 2026-11-14 01:05 UTC
+
+---
+
+## 2. Problem Statement & Scope
+
+### 2.1. Istota Problemu / Cel Projektu
+Implementacja i rozwój komponentów projektu TargetProj_225c9d.
+
+### 2.2. Cele Inżynierskie & Zakres
+- Zarządzanie strukturą plików i implementacja logiki w katalogu projektu.
+- Zgodność ze standardami inżynierskimi `MICHALS_WAYS.md` oraz regułą Zero Regressions.
+
+### 2.3. Ograniczenia i Warunki Brzegowe
+- Sandboxing w obrębie wybranego katalogu projektu.
+
+---
+
+## 3. Findings & Implementation Status
+
+- Inicjalny stan projektu zarejestrowany w katalogu danych aplikacji.
+
+---
+
+## 4. Architectural Decisions
+
+- Konfiguracja Git i metadane zarządzane przez Chappie Project Hub.

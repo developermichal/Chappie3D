@@ -1,0 +1,21 @@
+2026-11-14 02:12:01 [INFO] [chappie.redis_cache] Successfully connected to Redis cache at redis://localhost:6380/0
+2026-11-14 02:12:04 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=20836 for session test_sess_001 (Project: sample_project)
+2026-11-14 02:12:04 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=20836 (session: test_sess_001)...
+2026-11-14 02:12:05 [INFO] [chappie.terminal_manager] Terminal worker PID=20836 terminated successfully.
+2026-11-14 02:12:07 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=3888 for session test_sess_002 (Project: query_project)
+2026-11-14 02:12:12 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=3888 (session: test_sess_002)...
+2026-11-14 02:12:12 [INFO] [chappie.terminal_manager] Terminal worker PID=3888 terminated successfully.
+2026-11-14 02:12:15 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=15968 for session ws_test_sess_001 (Project: ws_proj)
+2026-11-14 02:12:15 [INFO] [chappie.api] Terminal client disconnected for session ws_test_sess_001
+2026-11-14 02:12:15 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=15968 (session: ws_test_sess_001)...
+2026-11-14 02:12:15 [INFO] [chappie.terminal_manager] Terminal worker PID=15968 terminated successfully.
+2026-11-14 02:12:17 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=25760 for session sess_multi_1 (Project: p1)
+2026-11-14 02:12:20 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=40420 for session sess_multi_2 (Project: p2)
+2026-11-14 02:12:20 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=25760 (session: sess_multi_1)...
+2026-11-14 02:12:20 [INFO] [chappie.terminal_manager] Terminal worker PID=25760 terminated successfully.
+2026-11-14 02:12:20 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=40420 (session: sess_multi_2)...
+2026-11-14 02:12:20 [INFO] [chappie.terminal_manager] Terminal worker PID=40420 terminated successfully.
+2026-11-14 02:12:23 [INFO] [chappie.terminal_manager] Started terminal worker child process PID=28680 for session fallback_test_sess (Project: fallback_proj)
+2026-11-14 02:12:23 [INFO] [chappie.terminal_manager] Terminating terminal worker child process PID=28680 (session: fallback_test_sess)...
+2026-11-14 02:12:23 [INFO] [chappie.terminal_manager] Terminal worker PID=28680 terminated successfully.
+2026-11-14 02:12:23 [WARNING] [chappie.web_search] Web search engine connection failed: Network is unreachable
